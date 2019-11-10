@@ -61,10 +61,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Q-Yq-H2b">
+                                <rect key="frame" x="132" y="656" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7bR-QO-svh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Clear calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMz-5e-Ya6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="l0L-vd-tT3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2SZ-4r-umg"/>
+                            <constraint firstItem="D5Q-Yq-H2b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="347-eP-qG2"/>
                             <constraint firstItem="Fuu-Rz-eWL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3AD-2o-3ZJ"/>
                             <constraint firstItem="UtI-MG-TIl" firstAttribute="top" secondItem="aOU-xt-NR9" secondAttribute="bottom" constant="40" id="ASo-5k-0SP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aOU-xt-NR9" secondAttribute="trailing" constant="40" id="FXN-zp-Lci"/>
@@ -74,6 +88,7 @@
                             <constraint firstItem="aOU-xt-NR9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QG1-ml-564"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fuu-Rz-eWL" secondAttribute="trailing" id="Uxx-uh-IbE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UtI-MG-TIl" secondAttribute="trailing" constant="40" id="Xzc-17-McK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D5Q-Yq-H2b" secondAttribute="bottom" constant="40" id="buY-ZX-k9I"/>
                             <constraint firstItem="UtI-MG-TIl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jn0-Sv-OZq"/>
                             <constraint firstItem="l0L-vd-tT3" firstAttribute="top" secondItem="UtI-MG-TIl" secondAttribute="bottom" constant="5" id="uW8-dJ-FYa"/>
                             <constraint firstAttribute="bottom" secondItem="Fuu-Rz-eWL" secondAttribute="bottom" id="vXm-Ls-IOC"/>
@@ -82,8 +97,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="priceTextField" destination="JWO-sy-BUk" id="d9G-av-6p7"/>
-                        <outlet property="wageTextField" destination="491-Hq-DzH" id="l8O-4K-6e6"/>
+                        <outlet property="hoursLbl" destination="l0L-vd-tT3" id="daM-GI-0gg"/>
+                        <outlet property="priceTxtField" destination="JWO-sy-BUk" id="d9G-av-6p7"/>
+                        <outlet property="resultLbl" destination="UtI-MG-TIl" id="sLr-CA-kAL"/>
+                        <outlet property="wageTxtField" destination="491-Hq-DzH" id="l8O-4K-6e6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
